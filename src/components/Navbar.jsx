@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import userIcon from "../assets/user.png";
+import { Link } from 'react-router-dom';
+import userIcon from '../assets/user.png';
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center">
@@ -13,7 +13,9 @@ const Navbar = () => {
         <div className=" ">
           <img src={userIcon} alt="" />
         </div>
-        <button className="btn btn-neutral rounded-none">Login</button>
+        <Link to={'/auth/login'} className="btn btn-neutral rounded-none">
+          Login
+        </Link>
       </div>
     </div>
   );
